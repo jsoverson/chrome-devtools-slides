@@ -138,7 +138,7 @@ slides > slide {
       position: absolute;
       bottom: $slide-top-bottom-padding / 2;
       left: $slide-left-right-padding;
-      background: url(../../images/google_developers_icon_128.png) no-repeat 0 50%;
+      background: url(../../images/sdjs-128x128.png) no-repeat 0 50%;
       @include background-size($brand-small-icon-size $brand-small-icon-size);
       padding-left: $brand-small-icon-size + 10;
       height: $brand-small-icon-size;
@@ -270,6 +270,12 @@ a {
 
   &:hover {
     color: black !important;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  em {
+    font-style: italic;
   }
 }
 
@@ -407,6 +413,11 @@ button:not(:disabled):active {
 
 :disabled {
   color: $gray-2;
+}
+
+a.unstyled {
+  text-decoration:inherit;
+  color:inherit;
 }
 
 .blue {
@@ -824,7 +835,7 @@ article.smaller {
 }
 
 .thank-you-slide {
-  background: $brand-blue !important;
+  background: $brand-black !important;
   color: white;
 
   h2 {
@@ -845,6 +856,10 @@ article.smaller {
   }
 }
 
+.rounded {
+  border-radius : 10px;
+}
+
 aside.gdbar {
   height: 97px;
   width: 215px;
@@ -855,6 +870,10 @@ aside.gdbar {
   @include background(linear-gradient(left, $gray-1, $gray-1) no-repeat);
   @include background-size(0% 100%);
   @include transition(all 0.5s ease-out 0.5s); /* Better to transition only on background-size, but not sure how to do that with the mixin. */
+
+  &.blue {
+    @include background(linear-gradient(left, $brand-blue, $brand-blue) no-repeat);
+  }
 
   &.right {
     right: 0;

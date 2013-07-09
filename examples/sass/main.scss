@@ -1,0 +1,24 @@
+
+$padding: 20px;
+$borderColor: grey;
+$border: 1px solid $borderColor;
+
+body {
+  slide {
+    background-color: red;
+  }
+  header {
+    border : $border;
+    padding:$padding;
+    
+    h1 {
+      text-align:center;
+    }
+  }
+  main {
+    border:$border;
+    border-color: lighten($borderColor, 20%); 
+    padding:$padding;
+  }
+}
+

@@ -1,0 +1,17 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joverson\/development\/src\/chrome-devtools-presentation\/examples\/sass\/main\.scss}line{font-family:\000037}}
+body slide {
+  background-color: red; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joverson\/development\/src\/chrome-devtools-presentation\/examples\/sass\/main\.scss}line{font-family:\0000310}}
+body header {
+  border: 1px solid grey;
+  padding: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joverson\/development\/src\/chrome-devtools-presentation\/examples\/sass\/main\.scss}line{font-family:\0000314}}
+  body header h1 {
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joverson\/development\/src\/chrome-devtools-presentation\/examples\/sass\/main\.scss}line{font-family:\0000318}}
+body main {
+  border: 1px solid grey;
+  border-color: #b3b3b3;
+  padding: 20px; }
+
+/*# sourceMappingURL=main.css.map */

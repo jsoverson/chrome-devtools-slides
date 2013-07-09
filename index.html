@@ -1,0 +1,268 @@
+<!--
+Google IO 2012/2013 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/scss/default.css">
+  <link rel="stylesheet" media="all" href="theme/scss/keys.css">
+  <link rel="stylesheet" media="all" href="theme/scss/sandiegojs/sandiegojs.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/scss/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="logoslide nobackground">
+    <article class="flexbox vcenter">
+      <span><img src="images/sandiegojs-420x100.png"></span>
+    </article>
+  </slide>
+
+  <slide class="title-slide segue nobackground">
+    <aside class="gdbar"><img src="images/sdjs-128x128.png"></aside>
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+  
+  <slide class="fill nobackground" style="background-image: url(images/uglyface.JPG)">
+    <hgroup>
+      <h2 class="white">Who the hell is this guy?</h2>
+      <h3 class="white">And what does <em>he</em> know?</h3>
+    </hgroup>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(images/happycat.jpg)">
+    <hgroup>
+      <h2 class="white">Browser Tools should make you happy</h2>
+    </hgroup>
+    <footer class="source white">http://www.flickr.com/photos/lambj/3471721865/</footer>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Use the right tool for the job</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/browsers.jpg" alt="Browsers">
+    </article>
+  </slide>
+
+  <slide class="segue dark quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/sdjs-128x128.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <q>
+        Man does not live by Chrome alone
+      </q>
+      <div class="author">
+        Jesus (probably)
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Experiment, explore, and be familiar!</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>IE DevTools
+          <ul>
+            <li>Can emulate IE6-10 in various compliance modes.</li>
+          </ul>
+        </li>
+        <li>Firefox
+          <ul>
+            <li>Has native dev tools & firebug extension.</li>
+            <li>Natively supports 3d view, excellent for troubleshooting rogue DOM.</li>
+          </ul>
+        </li>
+        <li>Safari
+          <ul>
+            <li>Familiar feel in webkit devtools.</li>
+            <li>Can remotely debug mobile safari on iOS6.</li>
+          </ul>
+        </li>
+        <li>Opera
+          <ul>
+            <li>"Dragonfly" will be based on Chrome DevTools going forward (<small><a href="https://twitter.com/brucel/status/335443451783041025">ref</a></small>).</li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>But be an expert with Chrome</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/chrome-devtools.png" alt="Chrome DevTools">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>And be an expert in the future with <a href="https://www.google.com/intl/en/chrome/browser/canary.html">Canary</a></h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <a href="https://www.google.com/intl/en/chrome/browser/canary.html" style="border:0"><img src="images/chrome-canary-icon.png" alt="Chrome Canary" title="Chrome Canary"></a>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Setup for success</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li><a href="http://aaltonen.co/2011/05/06/make-chrome-canary-the-default-browser-on-mac-os-x/">Make Canary your default browser</a></li>
+        <li>Enable Developer Tools experiments (and more) in <a href="chrome://flags/" title="Chrome won't actually go here, copy and paste it into your URL">chrome://flags</a></li>
+        <li>Get familiar with doc locations
+          <ul>
+            <li><a href="https://developers.google.com/chrome-developer-tools/docs/shortcuts">Official Shortcuts</a></li>
+            <li><a href="http://anti-code.com/devtools-cheatsheet/">Community CheatSheet</a></li>
+          </ul>
+        </li>
+      </ul>
+      <h3>Restart (for any flags that need it)</h3>
+    </article>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(images/baby-keyboard.jpg)">
+    <hgroup>
+      <h2 class="white" style="float:right;font-style:italic">Learn shortcuts and hotkeys!</h2>
+    </hgroup>
+    <footer class="source white">http://www.flickr.com/photos/cc511/1975196563/sizes/o/</footer>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Core shortcuts</h2>
+    </hgroup>
+    <article>
+      <table>
+        <tr>
+          <th></th><th>Mac OSX</th><th>Windows</th>
+        </tr>
+        <tr>
+          <td>Open DevTools</td>
+          <td><kbd>⌘</kbd> + <kbd>opt</kbd> + <kbd>I</kbd></td>
+          <td><kbd>F12</kbd> or <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>I</kbd></td>
+        </tr>
+        <tr>
+          <td>Navigate Panels</td>
+          <td><kbd>⌘</kbd> + <kbd>[</kbd> / <kbd>⌘</kbd> + <kbd>]</kbd>
+          <td><kbd>ctrl</kbd> + <kbd>[</kbd> / <kbd>ctrl</kbd> + <kbd>]</kbd>
+        </tr>
+        <tr>
+          <td>Toggle Console</td>
+          <td><kbd>esc</kbd></td>
+          <td><kbd>esc</kbd></td>
+        </tr>
+        <tr>
+          <td>Auto-complete<br>(various places)</td>
+          <td><kbd>ctrl</kbd> + <kbd>space</kbd></td>
+          <td><kbd>ctrl</kbd> + <kbd>space</kbd></td>
+        </tr>
+        <tr>
+          <td>Find<br>(various places)</td>
+          <td><kbd>⌘</kbd> + <kbd>F</kbd></td>
+          <td><kbd>ctrl</kbd> + <kbd>F</kbd></td>
+        </tr>
+        <tr>
+          <td>Open Source File</td>
+          <td><kbd>⌘</kbd> + <kbd>O</kbd></td>
+          <td><kbd>ctrl</kbd> + <kbd>O</kbd></td>
+        </tr>
+      </table>
+    </article>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(images/explore.jpg)">
+    <hgroup>
+      <h2 class="black">Explore!</h2>
+      <h3 class="black">Click buttons! Change settings! <em>Break something!</em></h3>
+    </hgroup>
+    <footer class="source white">http://www.flickr.com/photos/cengizuskuplu/3497605638</footer>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/sdjs-128x128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Let's Play!</h2>
+      <h3>Pick a site, any site. www.<em>what?</em></h3>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additional resources</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li><a href="https://www.google.com/intl/en/chrome/browser/canary.html">Chrome Canary</a></li>
+        <li><a href="https://developers.google.com/chrome-developer-tools/docs/commandline-api">Console documentation</a></li>
+        <li><a href="https://developers.google.com/chrome-developer-tools/docs/shortcuts">DevTools shortcuts</a></li>
+        <li><a href="http://anti-code.com/devtools-cheatsheet/">DevTools CheatSheet</a></li>
+        <li><a href="http://www.83rdstasis.net/devtoolsecrets/slides/london-web/">Secrets of the Browser DevTools</a></li>
+        <li><a href="https://plus.google.com/108269395644621881233/posts/Abk3GB16ZVJ">Shared circle of G+ web people</a></li>
+        <li><a href="https://twitter.com/sandiegojs/following">Who @sandiegojs follows</a></li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="thank-you-slide segue nobackground">
+    <aside class="gdbar right"><img src="images/sdjs-128x128.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2>Thank You!</h2>
+      <p>
+        <img src="images/jsoverson-gravatar.jpeg" style="width:45px;vertical-align: text-bottom;margin-right:1em" class="rounded">
+        Jarrod Overson - jsoverson
+      </p>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>

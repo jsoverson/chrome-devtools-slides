@@ -1,8 +1,8 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Title Goes Here<br>Up To Two Lines',
-    subtitle: 'Subtitle Goes Here',
+    title: 'Modern Developer Workflow<br>with Chrome DevTools',
+    subtitle: "ZOMG The Future is AWESOME",
     //eventInfo: {
     //  title: 'Google I/O',
     //  date: '6/x/2013'
@@ -16,18 +16,18 @@ var SLIDE_CONFIG = {
     fonts: [
       'Open Sans:regular,semibold,italic,italicsemibold',
       'Source Code Pro'
-    ],
+    ]
     //theme: ['mytheme'], // Add your own custom themes or styles in /theme/css. Leave off the .css extension.
   },
 
   // Author information
   presenters: [{
-    name: 'Firstname Lastname',
-    company: 'Job Title<br>Google',
-    gplus: 'http://plus.google.com/1234567890',
-    twitter: '@yourhandle',
-    www: 'http://www.you.com',
-    github: 'http://github.com/you'
+    name: 'Jarrod Overson',
+    company: 'Software Engineer / Consultant',
+    www: 'http://jsoverson.com/',
+    github: 'http://jsoverson.com/github',
+    twitter: '@jsoverson',
+    gplus: 'http://jsoverson.com/google+'
   }/*, {
     name: 'Second Name',
     company: 'Job Title, Google',
